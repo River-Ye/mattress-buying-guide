@@ -40,10 +40,12 @@ test('verified seller exceptions preserve stock, hauling and standalone-use limi
  const jalt=get('g-jalt-834').offers[0];assert.equal(jalt.haul,'no');assert.equal(jalt.downstairs,'unknown');assert.match(jalt.shippingNote,/待確認/);
  assert.match(get('g-jalt-112').offers.find(o=>o.id==='g-jalt-875-web').returns,/出清/);
  assert.equal(get('g-jalt-531').scopeStatus,'candidate');
+ const memory10=get('lf-foodcom-p-memory10');assert.equal(memory10.scopeStatus,'candidate');
+ assert.equal(selectProducts({...data,products:[memory10]}).length,0);
 });
 
 test('real exact-size prices cannot silently become single-size starting prices',()=>{
- const known=[['r-assari-387','',152,188,2277],['r-muji-','支撐型',142,196,15990],['r-3m-4612412','',150,186,5590],['r-3m-4612489','',150,186,4590],['r-house-655aefe5bd48bd0011c24904','',152,188,5988],['g-jalt-834','',152,188,4680],['g-jalt-619','',152,188,18888]];
+ const known=[['r-assari-387','',152,188,2277],['r-muji-','支撐型',142,196,15990],['r-3m-4612412','',150,186,5590],['r-3m-4612489','',150,186,4590],['r-house-655aefe5bd48bd0011c24904','',152,188,5988],['g-jalt-834','',152,188,4680],['g-jalt-619','',152,188,18888],['lf-foodcom-p-memory5','',152,188,1899]];
  for(const [prefix,model,width,length,price] of known){
   const p=data.products.find(p=>p.id.startsWith(prefix)&&p.model.includes(model));assert.ok(p,`${prefix} absent`);
   assert.equal(p.size.width,width);assert.equal(p.size.length,length);assert.equal(p.offers[0].price,price);

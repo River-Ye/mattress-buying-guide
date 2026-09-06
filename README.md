@@ -2,8 +2,8 @@
 
 繁體中文雙人床墊選購指南。以台中實體門市、配送太平的公開通路為查核範圍，提供搜尋、篩選、排序及 2–4 項精確通路比較。
 
-- 網站：https://river-ye.github.io/mattress-buying-guide/
-- 原始碼：https://github.com/River-Ye/mattress-buying-guide
+- 網站：[開啟床墊選購指南](https://river-ye.github.io/mattress-buying-guide/)
+- 原始碼：[River-Ye/mattress-buying-guide](https://github.com/River-Ye/mattress-buying-guide)
 - 查核快照：2026-09-06；各項來源日期與研究進度在網站「品牌盤點」及 catalog.json。
 
 ## 網站怎麼使用
@@ -13,13 +13,15 @@
 3. 按「加入比較」選擇 2–4 個項目，再按底部「開始比較」。每欄保留指定尺寸與通路，切換篩選不會清空比較。
 4. 展開「查看通路、負評與查核來源」，查看店址與地圖、運送樓層費、搬下樓／載走、退換貨及負評原文。沒有公開價格會顯示「需詢價」。
 
-可在「品牌盤點」查看研究範圍與限制，或下載完整 JSON。尚在補漏的進度會如實顯示，後續查核直接更新同一網址。
+可在「品牌盤點」查看研究範圍與限制，或下載完整 JSON。本次最後連續兩輪補漏均未新增符合品牌；受限入口與未公開資料仍逐項保留待確認。
 
 ## 本地使用
 
 無執行階段套件、無建置流程。使用 Node.js 內建測試，並透過任意靜態 HTTP 伺服器開啟：
 
 ```sh
+git clone https://github.com/River-Ye/mattress-buying-guide.git
+cd mattress-buying-guide
 npm run check
 python3 -m http.server 8873
 ```
