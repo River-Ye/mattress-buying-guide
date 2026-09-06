@@ -572,6 +572,25 @@
       ]
     },
     {
+      "id": "g-darphia",
+      "name": "Darphia 朵法亞",
+      "entity": "朵法婭生活美學有限公司（統一編號54689075）",
+      "website": "https://www.darphia.com/",
+      "status": "included",
+      "reason": "現行Double獨立筒可單獨使用且有台灣本島配送；記憶款官網售完。官網明列沒有實體店，不以聯絡地址當試躺門市。",
+      "sourceIds": [
+        "g-darphia-cat-0",
+        "g-darphia-cat-1",
+        "g-darphia-cat-2",
+        "g-darphia-cat-3",
+        "g-darphia-main",
+        "g-darphia-faq",
+        "g-darphia-momo",
+        "g-darphia-classic",
+        "g-darphia-old-review"
+      ]
+    },
+    {
       "id": "fd-body",
       "name": "BODY 巴緹",
       "entity": "公開商品頁標示 BODY 巴緹；本次未取得可核實法律主體。",
@@ -816,6 +835,76 @@
       "reason": "已讀完整可得品牌目錄分頁與標準雙人商品SKU；單人、加大與其他家具排除，規格不明保留候選。",
       "sourceIds": [
         "fm-bn-cat"
+      ]
+    },
+    {
+      "id": "l-mrsleeping",
+      "name": "眠床先生 Mr.Sleeping",
+      "entity": "全益家具實業社（官方關於／聯絡頁）",
+      "website": "https://www.mrsleeping.com.tw/",
+      "status": "candidate",
+      "reason": "官網四款均有152×188標準雙人及對應價格；已公開門市集中桃園、新北，未核實台中門市或太平配送，保留候選。與MR.LIVING居家先生、眠床小姐不同主體。",
+      "sourceIds": [
+        "l-mrs-s-8ac01cf98b9e",
+        "l-mrs-s-4707ae092ebb",
+        "l-mrs-s-20ed77700534",
+        "l-mrs-s-ede0acfbdc62",
+        "l-mrs-s-bfceace347d4"
+      ]
+    },
+    {
+      "id": "l-mrs-beckoning",
+      "name": "招眠貓 BECKONING SLEEP",
+      "entity": "圓滿床業延續品牌",
+      "website": "https://beckoningsleep.com/",
+      "status": "candidate",
+      "reason": "官網有橘貓等床墊；公開配送及維修服務以新店／中和／永和／文山及新北為範圍，其他地區另評估，未核實太平配送或台中門市；候選，不以北部舊床回收承諾套到台中。",
+      "sourceIds": [
+        "l-mrs-s-7f825276bbc7"
+      ]
+    },
+    {
+      "id": "l-mrs-tanha",
+      "name": "彈霸 TANHA",
+      "entity": "新材實業有限公司",
+      "website": "https://www.tanha.com.tw/",
+      "status": "excluded",
+      "reason": "已讀官網與手機完整商品頁：唯一公開款為單人加大107×190×5.5cm，16900含本島運費；未有Double，不因本島配送就收錄。",
+      "sourceIds": [
+        "l-mrs-s-3f7cb4d98899"
+      ]
+    },
+    {
+      "id": "l-mrs-miofeel",
+      "name": "Miofeel",
+      "entity": "歷史金典綠園道櫃位名稱；品牌主體未確認",
+      "website": "https://zh.wikipedia.org/wiki/金典綠園道",
+      "status": "candidate",
+      "reason": "本輪只在歷史商場租戶名單出現，未取得現行完整Double型錄；不把寢具櫃位當作床墊供貨，不算新增符合品牌。",
+      "sourceIds": [
+        "l-mrs-s-8a85688528bf"
+      ]
+    },
+    {
+      "id": "l-mrs-workinghouse",
+      "name": "生活工場",
+      "entity": "商戶清單名稱；本次未核實床墊型錄",
+      "website": "https://www.nccc.com.tw/春漾美麗生活節-中彰投.pdf",
+      "status": "candidate",
+      "reason": "商戶活動清單未識別現行完整Double型號；候選名稱，不從歷史商場旁支遞迴擴大。",
+      "sourceIds": [
+        "l-mrs-s-0de82037a49a"
+      ]
+    },
+    {
+      "id": "l-mrs-powersleep",
+      "name": "Power Sleep知識睡眠館",
+      "entity": "官網品牌；本次未核實法律主體",
+      "website": "https://www.powersleep.com.tw/",
+      "status": "candidate",
+      "reason": "具名查詢意外返回現行官網量身訂製床墊與枕頭介紹；尚無本次可核實固定Double型號及太平配送，不當成符合新增。",
+      "sourceIds": [
+        "l-mrs-s-ae2e5d21d36a"
       ]
     },
     {
@@ -49186,6 +49275,214 @@
       }
     },
     {
+      "id": "g-darphia-spring",
+      "brandId": "g-darphia",
+      "model": "KUMO 雲薄墊 獨立筒款",
+      "size": {
+        "label": "標準雙人",
+        "system": "台規",
+        "width": 150,
+        "length": 188,
+        "height": 9.5
+      },
+      "material": "594顆5cm獨立筒／記憶棉舒適層／DC減震棉／透氣棉／針織布",
+      "firmness": {
+        "label": "表層柔軟／Q彈描述；未公開整床軟硬分級",
+        "rank": null
+      },
+      "notes": [
+        "官方標準雙人實際150×188cm，厚9.5cm；尺數文案寫5×6.3尺，依公分數留存。",
+        "官方Q&A採動態公開問答資料，本次已讀取實際問答；不因初始頁只有載入提示而省略限制。",
+        "早期150×186cm／1000顆彈簧心得與現行150×188cm／594顆版本不同，不直接套型號負評。",
+        "本款明列房東沒提供床墊時可隨鋪隨用、不須床架，具獨立睡眠用途。"
+      ],
+      "sourceIds": [
+        "g-darphia-spring",
+        "g-darphia-eslite-spring",
+        "g-darphia-faq",
+        "g-darphia-faq-data"
+      ],
+      "offers": [
+        {
+          "id": "g-darphia-spring-web",
+          "name": "Darphia 朵法亞官方網店",
+          "channel": "online",
+          "address": "新北市中和區板南路663號14樓（聯絡地址，非實體店面，不對外開放）",
+          "district": null,
+          "url": "https://www.darphia.com/products/kumo-double-size-spring-bed",
+          "price": 11999,
+          "priceNote": "此頁只有150×188cm標準雙人；公开售價，贈專用床包、未扣會員優惠。",
+          "delivery": "yes",
+          "deliveryNote": "官方Q&A列台灣本島宅配，涵蓋太平一般地址；偏遠道路及大件配送仍依物流確認。",
+          "shippingNote": "本島滿3000免基本運費，本尺寸已達門檻；物流無法指定到貨時間。通常隔工作日出貨、出貨後1–3工作天，活動／缺貨另確認。",
+          "stairsNote": "Q&A明列大榮貨運不搬上樓；商品選項寫新竹貨運，物流名稱不一，送達樓層與搬運方式須確認。",
+          "trial": "no",
+          "trialNote": "官方Q&A明列目前沒有實體門市。",
+          "haul": "no",
+          "haulFee": null,
+          "haulNote": "KUMO官方問答明列目前不代回收舊床墊。",
+          "downstairs": "unknown",
+          "downstairsNote": "未提供搬舊床下樓的公開承諾；新床不搬上樓不等於舊床搬下樓服務。",
+          "sleepTrial": "床墊不提供試睡；官網七晚試睡只適用枕頭，不能套床墊。",
+          "warranty": "Q&A列結構性損壞、非人為明顯塌陷／變形與到貨瑕疵；未公開年限、凹陷門檻及维修運費，須確認。",
+          "returns": "7日內申請；床墊拆封使用不接受退換，開箱需錄影。只退貨不換貨，須原透明袋及紙箱、贈品完整；回收運費品牌負擔，出貨運費不退。缺件污損可減額、未達促銷門檻重新計價；驗貨後約7–20工作天退款。",
+          "sourceIds": [
+            "g-darphia-spring",
+            "g-darphia-faq",
+            "g-darphia-faq-data",
+            "g-darphia-returns"
+          ]
+        },
+        {
+          "id": "g-darphia-spring-eslite",
+          "name": "誠品線上",
+          "channel": "online",
+          "address": null,
+          "district": null,
+          "url": "https://www.eslite.com/product/1005468132682288235008",
+          "price": null,
+          "priceNote": "可讀索引只確認雙人規格；當前價格、庫存未取得，需確認。",
+          "delivery": "unknown",
+          "deliveryNote": "本商品送達太平與現貨狀態未確認，候選通路；不套用官網物流政策。",
+          "shippingNote": "待確認",
+          "stairsNote": "待確認",
+          "trial": "unknown",
+          "trialNote": "台中該型號展示待確認",
+          "haul": "unknown",
+          "haulFee": null,
+          "haulNote": "未找到載走回收的明確條款",
+          "downstairs": "unknown",
+          "downstairsNote": "待確認",
+          "sleepTrial": "未找到公開試睡承諾",
+          "warranty": "待確認",
+          "returns": "須依該通路條款確認",
+          "sourceIds": [
+            "g-darphia-eslite-spring"
+          ]
+        }
+      ],
+      "reviewSearch": {
+        "status": "limited",
+        "queries": [
+          "\"朵法亞\" \"KUMO\" \"缺點\"",
+          "\"朵法亞\" \"KUMO\" \"獨立筒\" 評價 PTT Dcard",
+          "\"朵法亞\" \"記憶棉\" \"退貨\"",
+          "\"朵法亞\" \"床墊\" \"台中\" 試躺",
+          "\"朵法亞\" \"KUMO\" site:ptt.cc",
+          "\"朵法亞\" \"KUMO\" site:dcard.tw",
+          "\"朵法亞\" \"KUMO\" \"負評\"",
+          "\"朵法亞\" \"記憶棉\" \"心得\" \"缺點\""
+        ],
+        "checkedAt": "2026-09-06",
+        "note": "已逐型號查PTT、Dcard、網購與具名開箱；多為促銷或早期版本，未找到可核實的本版型號負評。誠品直接讀取403、蝦皮逐則評價受限，不使用星等推定品質。"
+      }
+    },
+    {
+      "id": "g-darphia-memory",
+      "brandId": "g-darphia",
+      "model": "KUMO 雲薄墊 記憶棉款",
+      "size": {
+        "label": "標準雙人",
+        "system": "台規",
+        "width": 150,
+        "length": 188,
+        "height": 9.5
+      },
+      "material": "記憶棉／DC減震棉／針織布",
+      "firmness": {
+        "label": "表層柔軟／Q彈描述；未公開整床軟硬分級",
+        "rank": null
+      },
+      "notes": [
+        "官方標準雙人實際150×188cm，厚9.5cm；尺數文案寫5×6.3尺，依公分數留存。",
+        "官方Q&A採動態公開問答資料，本次已讀取實際問答；不因初始頁只有載入提示而省略限制。",
+        "2021年150×186cm／1000顆彈簧開箱屬舊獨立筒款，不是本記憶棉款使用心得，不直接套用。",
+        "官方目前售完；官網主要介紹舊床加鋪用途，誠品同尺寸商品另列可鋪地板，但現售與獨立使用適用性仍保守待確認。"
+      ],
+      "sourceIds": [
+        "g-darphia-memory",
+        "g-darphia-eslite-memory",
+        "g-darphia-faq",
+        "g-darphia-faq-data"
+      ],
+      "offers": [
+        {
+          "id": "g-darphia-memory-web",
+          "name": "Darphia 朵法亞官方網店",
+          "channel": "online",
+          "address": "新北市中和區板南路663號14樓（聯絡地址，非實體店面，不對外開放）",
+          "district": null,
+          "url": "https://www.darphia.com/products/kumo-double-size-memory-bed",
+          "price": 9999,
+          "priceNote": "此頁只有150×188cm標準雙人；公开售價，贈專用床包、未扣會員優惠。目前售完，不能視為現貨可下單。",
+          "delivery": "yes",
+          "deliveryNote": "官方Q&A列台灣本島宅配，涵蓋太平一般地址；偏遠道路及大件配送仍依物流確認。",
+          "shippingNote": "本島滿3000免基本運費，本尺寸已達門檻；物流無法指定到貨時間。通常隔工作日出貨、出貨後1–3工作天，活動／缺貨另確認。",
+          "stairsNote": "Q&A明列大榮貨運不搬上樓；商品選項寫新竹貨運，物流名稱不一，送達樓層與搬運方式須確認。",
+          "trial": "no",
+          "trialNote": "官方Q&A明列目前沒有實體門市。",
+          "haul": "no",
+          "haulFee": null,
+          "haulNote": "KUMO官方問答明列目前不代回收舊床墊。",
+          "downstairs": "unknown",
+          "downstairsNote": "未提供搬舊床下樓的公開承諾；新床不搬上樓不等於舊床搬下樓服務。",
+          "sleepTrial": "床墊不提供試睡；官網七晚試睡只適用枕頭，不能套床墊。",
+          "warranty": "Q&A列結構性損壞、非人為明顯塌陷／變形與到貨瑕疵；未公開年限、凹陷門檻及维修運費，須確認。",
+          "returns": "7日內申請；床墊拆封使用不接受退換，開箱需錄影。只退貨不換貨，須原透明袋及紙箱、贈品完整；回收運費品牌負擔，出貨運費不退。缺件污損可減額、未達促銷門檻重新計價；驗貨後約7–20工作天退款。",
+          "sourceIds": [
+            "g-darphia-memory",
+            "g-darphia-faq",
+            "g-darphia-faq-data",
+            "g-darphia-returns"
+          ]
+        },
+        {
+          "id": "g-darphia-memory-eslite",
+          "name": "誠品線上",
+          "channel": "online",
+          "address": null,
+          "district": null,
+          "url": "https://www.eslite.com/product/1005468132682288238009",
+          "price": null,
+          "priceNote": "可讀索引只確認雙人規格；當前價格、庫存未取得，需確認。",
+          "delivery": "unknown",
+          "deliveryNote": "本商品送達太平與現貨狀態未確認，候選通路；不套用官網物流政策。",
+          "shippingNote": "待確認",
+          "stairsNote": "待確認",
+          "trial": "unknown",
+          "trialNote": "台中該型號展示待確認",
+          "haul": "unknown",
+          "haulFee": null,
+          "haulNote": "未找到載走回收的明確條款",
+          "downstairs": "unknown",
+          "downstairsNote": "待確認",
+          "sleepTrial": "未找到公開試睡承諾",
+          "warranty": "待確認",
+          "returns": "須依該通路條款確認",
+          "sourceIds": [
+            "g-darphia-eslite-memory"
+          ]
+        }
+      ],
+      "reviewSearch": {
+        "status": "limited",
+        "queries": [
+          "\"朵法亞\" \"KUMO\" \"缺點\"",
+          "\"朵法亞\" \"KUMO\" \"獨立筒\" 評價 PTT Dcard",
+          "\"朵法亞\" \"記憶棉\" \"退貨\"",
+          "\"朵法亞\" \"床墊\" \"台中\" 試躺",
+          "\"朵法亞\" \"KUMO\" site:ptt.cc",
+          "\"朵法亞\" \"KUMO\" site:dcard.tw",
+          "\"朵法亞\" \"KUMO\" \"負評\"",
+          "\"朵法亞\" \"記憶棉\" \"心得\" \"缺點\""
+        ],
+        "checkedAt": "2026-09-06",
+        "note": "已逐型號查PTT、Dcard、網購與具名開箱；多為促銷或早期版本，未找到可核實的本版型號負評。誠品直接讀取403、蝦皮逐則評價受限，不使用星等推定品質。"
+      },
+      "scopeStatus": "candidate",
+      "scopeNote": "官網目前售完，獨立睡眠用途與通路現货狀態待確認。"
+    },
+    {
       "id": "fd-body-debr2j-a900awxji",
       "brandId": "fd-body",
       "model": "3M系列-經典高澎度+防蹣+防潑水+蜂巢獨立筒床墊",
@@ -57195,7 +57492,7 @@
           "haulFee": null,
           "haulNote": "購物說明列付費回收1,500元／件，同段又說部分地區配合環保局或只搬下樓；未明確太平是否直接載走、預約／樓層限制，故不標已確認載走。",
           "sleepTrial": "99天試睡（台灣本島常規床）；至少使用14天後申請，需保潔墊及合格床架，不是無條件免費退貨。",
-          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯只接受到貨7天內未拆封自付運費換尺寸，拆封不接受因尺寸不合退換。",
+          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯的主條款限到貨7天內未拆封自付運費換尺寸、拆封不受理；同頁FAQ另寫拆封逾7天可依情況收取整新及運費換尺寸，前後條款不一致，實際是否受理須先確認。",
           "warranty": "購物說明明列全系列10年彈簧保固與保修；不是全床材料10年免費。人工、來回運費、凹陷門檻及人為損壞細則未完整公開，待確認。",
           "sourceIds": [
             "fjw-s-nature-soft",
@@ -57333,7 +57630,7 @@
           "haulFee": null,
           "haulNote": "購物說明列付費回收1,500元／件，同段又說部分地區配合環保局或只搬下樓；未明確太平是否直接載走、預約／樓層限制，故不標已確認載走。",
           "sleepTrial": "99天試睡（台灣本島常規床）；至少使用14天後申請，需保潔墊及合格床架，不是無條件免費退貨。",
-          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯只接受到貨7天內未拆封自付運費換尺寸，拆封不接受因尺寸不合退換。",
+          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯的主條款限到貨7天內未拆封自付運費換尺寸、拆封不受理；同頁FAQ另寫拆封逾7天可依情況收取整新及運費換尺寸，前後條款不一致，實際是否受理須先確認。",
           "warranty": "購物說明明列全系列10年彈簧保固與保修；不是全床材料10年免費。人工、來回運費、凹陷門檻及人為損壞細則未完整公開，待確認。",
           "sourceIds": [
             "fjw-s-nature-cozy",
@@ -57471,7 +57768,7 @@
           "haulFee": null,
           "haulNote": "購物說明列付費回收1,500元／件，同段又說部分地區配合環保局或只搬下樓；未明確太平是否直接載走、預約／樓層限制，故不標已確認載走。",
           "sleepTrial": "99天試睡（台灣本島常規床）；至少使用14天後申請，需保潔墊及合格床架，不是無條件免費退貨。",
-          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯只接受到貨7天內未拆封自付運費換尺寸，拆封不接受因尺寸不合退換。",
+          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯的主條款限到貨7天內未拆封自付運費換尺寸、拆封不受理；同頁FAQ另寫拆封逾7天可依情況收取整新及運費換尺寸，前後條款不一致，實際是否受理須先確認。",
           "warranty": "購物說明明列全系列10年彈簧保固與保修；不是全床材料10年免費。人工、來回運費、凹陷門檻及人為損壞細則未完整公開，待確認。",
           "sourceIds": [
             "fjw-s-nature-support",
@@ -57609,7 +57906,7 @@
           "haulFee": null,
           "haulNote": "購物說明列付費回收1,500元／件，同段又說部分地區配合環保局或只搬下樓；未明確太平是否直接載走、預約／樓層限制，故不標已確認載走。",
           "sleepTrial": "99天試睡（台灣本島常規床）；至少使用14天後申請，需保潔墊及合格床架，不是無條件免費退貨。",
-          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯只接受到貨7天內未拆封自付運費換尺寸，拆封不接受因尺寸不合退換。",
+          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯的主條款限到貨7天內未拆封自付運費換尺寸、拆封不受理；同頁FAQ另寫拆封逾7天可依情況收取整新及運費換尺寸，前後條款不一致，實際是否受理須先確認。",
           "warranty": "購物說明明列全系列10年彈簧保固與保修；不是全床材料10年免費。人工、來回運費、凹陷門檻及人為損壞細則未完整公開，待確認。",
           "sourceIds": [
             "fjw-s-journey-soft",
@@ -57747,7 +58044,7 @@
           "haulFee": null,
           "haulNote": "購物說明列付費回收1,500元／件，同段又說部分地區配合環保局或只搬下樓；未明確太平是否直接載走、預約／樓層限制，故不標已確認載走。",
           "sleepTrial": "99天試睡（台灣本島常規床）；至少使用14天後申請，需保潔墊及合格床架，不是無條件免費退貨。",
-          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯只接受到貨7天內未拆封自付運費換尺寸，拆封不接受因尺寸不合退換。",
+          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯的主條款限到貨7天內未拆封自付運費換尺寸、拆封不受理；同頁FAQ另寫拆封逾7天可依情況收取整新及運費換尺寸，前後條款不一致，實際是否受理須先確認。",
           "warranty": "購物說明明列全系列10年彈簧保固與保修；不是全床材料10年免費。人工、來回運費、凹陷門檻及人為損壞細則未完整公開，待確認。",
           "sourceIds": [
             "fjw-s-journey-cozy",
@@ -57889,7 +58186,7 @@
           "haulFee": null,
           "haulNote": "購物說明列付費回收1,500元／件，同段又說部分地區配合環保局或只搬下樓；未明確太平是否直接載走、預約／樓層限制，故不標已確認載走。",
           "sleepTrial": "99天試睡（台灣本島常規床）；至少使用14天後申請，需保潔墊及合格床架，不是無條件免費退貨。",
-          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯只接受到貨7天內未拆封自付運費換尺寸，拆封不接受因尺寸不合退換。",
+          "returns": "99天自到貨日起，至少試睡14天才申請；每人／地址限退換一次，換貨後不再試睡。台中一般地區來回物流4,000元，另計金流／分期費；無原袋加500元。贈品無論是否拆封皆扣原價：保潔墊900–1,360元依尺寸、枕頭1,990元／顆。須保留發票、交易憑證、信用卡簽單及保固卡，附完整照片影片並維持潔淨；換款依新款原價／適用時價補差額。尺寸選錯的主條款限到貨7天內未拆封自付運費換尺寸、拆封不受理；同頁FAQ另寫拆封逾7天可依情況收取整新及運費換尺寸，前後條款不一致，實際是否受理須先確認。",
           "warranty": "購物說明明列全系列10年彈簧保固與保修；不是全床材料10年免費。人工、來回運費、凹陷門檻及人為損壞細則未完整公開，待確認。",
           "sourceIds": [
             "fjw-s-journey-support",
@@ -72058,6 +72355,270 @@
         ],
         "checkedAt": "2026-09-06",
         "note": "已作本型號具名查詢並讀商品原頁。未找到可核實現行款獨立負評；大量舊導購複製文未採作親身使用證據，不代表零負評。"
+      }
+    },
+    {
+      "id": "l-mrs-kurundi",
+      "brandId": "l-mrsleeping",
+      "model": "庫倫迪床墊",
+      "size": {
+        "label": "標準五尺雙人",
+        "system": "台規",
+        "width": 152,
+        "length": 188,
+        "height": null
+      },
+      "material": "比利時舒柔表布／中鋼高碳Q性彈簧／吸音棉／提花針織側布",
+      "firmness": {
+        "label": "未公開整床明確軟硬級；表布／舒適層柔軟宣傳不代替整床分級",
+        "rank": null
+      },
+      "notes": [
+        "商品額外資訊明列五尺152×188；厚度未取得可靠文字／圖片規格，保留待確認。",
+        "直連首頁、商店、FAQ及sitemap均回403；本次讀取搜尋服務可公開展開的官方完整內文，無法再核實結帳庫存。",
+        "官網宣傳的抑菌、過敏或療癒效果沒有當成獨立使用評價。"
+      ],
+      "sourceIds": [
+        "l-mrs-s-f8d2d0a8ee5e",
+        "l-mrs-s-8ac01cf98b9e"
+      ],
+      "offers": [
+        {
+          "id": "l-mrs-kurundi-web",
+          "name": "眠床先生官方網店",
+          "channel": "online",
+          "address": "桃園市桃園區春日路1137號（桃園館總店；非台中門市）",
+          "district": null,
+          "url": "https://www.mrsleeping.com.tw/product/【舒柔包覆】庫倫迪床墊（標準五尺雙人）/",
+          "price": 12800,
+          "priceNote": "首頁明列本款標準五尺双人價格；商品页額外資訊為152×188。直連官網403，以公開可讀頁面快照核實；未用尺寸混合起價，庫存／結帳價待確認。",
+          "delivery": "unknown",
+          "deliveryNote": "FAQ只有物流流程範例與地區依店報價，沒有核實太平或全本島配送。",
+          "shippingNote": "運費依門市及地區報價；FAQ範例另列個人因素再配送300–600元，實際適用待確認。",
+          "stairsNote": "樓層、電梯及偏遠地址影響門市報價，沒有固定樓層費。",
+          "trial": "unknown",
+          "trialNote": "官方列桃園、新北共6家體驗門市；未找到台中展示，本款各店現有展示需確認。",
+          "haul": "unknown",
+          "haulFee": null,
+          "haulNote": "未公開舊床载走條件；FAQ派司機回收是購入瑕疵品退換，不是舊床清運。",
+          "downstairs": "unknown",
+          "downstairsNote": "未公開是否協助舊床搬下樓與費用。",
+          "sleepTrial": "官網原買家收貨日起30天內可申請；建議適應5–7天，特價展示／客製及非原買家不適用。",
+          "warranty": "有限保固：表布1年、主要獨立筒結構10年；保留憑證。製造缺陷可申請，永久泡棉凹陷以超過3.8cm為例；正常輕微壓痕、錯誤床架／折疊、污損霉味及人為損壞除外，更換不重算保固。維修運費待確認。",
+          "returns": "30天試睡退貨須整潔乾燥、無重大污損破損異味；買家付區域報價退貨運費，缺外袋另收整新費，贈品須歸還或補價。拆封尺寸買錯的換新另由店家估費。",
+          "sourceIds": [
+            "l-mrs-s-f8d2d0a8ee5e",
+            "l-mrs-s-8ac01cf98b9e",
+            "l-mrs-s-20ed77700534",
+            "l-mrs-s-ede0acfbdc62"
+          ]
+        }
+      ],
+      "reviewSearch": {
+        "status": "checked",
+        "queries": [
+          "\"眠床先生\" \"庫倫迪\" 評價 心得"
+        ],
+        "checkedAt": "2026-09-06",
+        "note": "已逐型號具名查找公開心得及負評；結果主要為官方介紹或同名混淆，未找到可核實型號使用心得／負評，並非零負評。"
+      }
+    },
+    {
+      "id": "l-mrs-philippa",
+      "brandId": "l-mrsleeping",
+      "model": "菲莉帕床墊",
+      "size": {
+        "label": "標準五尺雙人",
+        "system": "台規",
+        "width": 152,
+        "length": 188,
+        "height": null
+      },
+      "material": "蘆薈微膠囊表布／親水棉／3D網布／中鋼高碳Q彈性彈簧",
+      "firmness": {
+        "label": "未公開整床明確軟硬級；表布／舒適層柔軟宣傳不代替整床分級",
+        "rank": null
+      },
+      "notes": [
+        "商品額外資訊明列五尺152×188；厚度未取得可靠文字／圖片規格，保留待確認。",
+        "直連首頁、商店、FAQ及sitemap均回403；本次讀取搜尋服務可公開展開的官方完整內文，無法再核實結帳庫存。",
+        "官網宣傳的抑菌、過敏或療癒效果沒有當成獨立使用評價。"
+      ],
+      "sourceIds": [
+        "l-mrs-s-a748dc3e2d06",
+        "l-mrs-s-8ac01cf98b9e"
+      ],
+      "offers": [
+        {
+          "id": "l-mrs-philippa-web",
+          "name": "眠床先生官方網店",
+          "channel": "online",
+          "address": "桃園市桃園區春日路1137號（桃園館總店；非台中門市）",
+          "district": null,
+          "url": "https://www.mrsleeping.com.tw/product/【蘆薈精華】菲莉帕床墊（標準五尺雙人）/",
+          "price": 14800,
+          "priceNote": "首頁明列本款標準五尺双人價格；商品页額外資訊為152×188。直連官網403，以公開可讀頁面快照核實；未用尺寸混合起價，庫存／結帳價待確認。",
+          "delivery": "unknown",
+          "deliveryNote": "FAQ只有物流流程範例與地區依店報價，沒有核實太平或全本島配送。",
+          "shippingNote": "運費依門市及地區報價；FAQ範例另列個人因素再配送300–600元，實際適用待確認。",
+          "stairsNote": "樓層、電梯及偏遠地址影響門市報價，沒有固定樓層費。",
+          "trial": "unknown",
+          "trialNote": "官方列桃園、新北共6家體驗門市；未找到台中展示，本款各店現有展示需確認。",
+          "haul": "unknown",
+          "haulFee": null,
+          "haulNote": "未公開舊床载走條件；FAQ派司機回收是購入瑕疵品退換，不是舊床清運。",
+          "downstairs": "unknown",
+          "downstairsNote": "未公開是否協助舊床搬下樓與費用。",
+          "sleepTrial": "官網原買家收貨日起30天內可申請；建議適應5–7天，特價展示／客製及非原買家不適用。",
+          "warranty": "有限保固：表布1年、主要獨立筒結構10年；保留憑證。製造缺陷可申請，永久泡棉凹陷以超過3.8cm為例；正常輕微壓痕、錯誤床架／折疊、污損霉味及人為損壞除外，更換不重算保固。維修運費待確認。",
+          "returns": "30天試睡退貨須整潔乾燥、無重大污損破損異味；買家付區域報價退貨運費，缺外袋另收整新費，贈品須歸還或補價。拆封尺寸買錯的換新另由店家估費。",
+          "sourceIds": [
+            "l-mrs-s-a748dc3e2d06",
+            "l-mrs-s-8ac01cf98b9e",
+            "l-mrs-s-20ed77700534",
+            "l-mrs-s-ede0acfbdc62"
+          ]
+        }
+      ],
+      "reviewSearch": {
+        "status": "checked",
+        "queries": [
+          "\"眠床先生\" \"菲莉帕\" 評價 心得"
+        ],
+        "checkedAt": "2026-09-06",
+        "note": "已逐型號具名查找公開心得及負評；結果主要為官方介紹或同名混淆，未找到可核實型號使用心得／負評，並非零負評。"
+      }
+    },
+    {
+      "id": "l-mrs-ankara",
+      "brandId": "l-mrsleeping",
+      "model": "安卡拉床墊",
+      "size": {
+        "label": "標準五尺雙人",
+        "system": "台規",
+        "width": 152,
+        "length": 188,
+        "height": null
+      },
+      "material": "Sanitized表布／泰國天然乳膠／精梳純棉／2.4mm中鋼護脊獨立筒",
+      "firmness": {
+        "label": "未公開整床明確軟硬級；表布／舒適層柔軟宣傳不代替整床分級",
+        "rank": null
+      },
+      "notes": [
+        "商品額外資訊明列五尺152×188；厚度未取得可靠文字／圖片規格，保留待確認。",
+        "直連首頁、商店、FAQ及sitemap均回403；本次讀取搜尋服務可公開展開的官方完整內文，無法再核實結帳庫存。",
+        "官網宣傳的抑菌、過敏或療癒效果沒有當成獨立使用評價。"
+      ],
+      "sourceIds": [
+        "l-mrs-s-b14f1674f55a",
+        "l-mrs-s-8ac01cf98b9e"
+      ],
+      "offers": [
+        {
+          "id": "l-mrs-ankara-web",
+          "name": "眠床先生官方網店",
+          "channel": "online",
+          "address": "桃園市桃園區春日路1137號（桃園館總店；非台中門市）",
+          "district": null,
+          "url": "https://www.mrsleeping.com.tw/product/【山寧泰材質】安卡拉床墊（標準五尺雙人）/",
+          "price": 16800,
+          "priceNote": "首頁明列本款標準五尺双人價格；商品页額外資訊為152×188。直連官網403，以公開可讀頁面快照核實；未用尺寸混合起價，庫存／結帳價待確認。",
+          "delivery": "unknown",
+          "deliveryNote": "FAQ只有物流流程範例與地區依店報價，沒有核實太平或全本島配送。",
+          "shippingNote": "運費依門市及地區報價；FAQ範例另列個人因素再配送300–600元，實際適用待確認。",
+          "stairsNote": "樓層、電梯及偏遠地址影響門市報價，沒有固定樓層費。",
+          "trial": "unknown",
+          "trialNote": "官方列桃園、新北共6家體驗門市；未找到台中展示，本款各店現有展示需確認。",
+          "haul": "unknown",
+          "haulFee": null,
+          "haulNote": "未公開舊床载走條件；FAQ派司機回收是購入瑕疵品退換，不是舊床清運。",
+          "downstairs": "unknown",
+          "downstairsNote": "未公開是否協助舊床搬下樓與費用。",
+          "sleepTrial": "官網原買家收貨日起30天內可申請；建議適應5–7天，特價展示／客製及非原買家不適用。",
+          "warranty": "有限保固：表布1年、主要獨立筒結構10年；保留憑證。製造缺陷可申請，永久泡棉凹陷以超過3.8cm為例；正常輕微壓痕、錯誤床架／折疊、污損霉味及人為損壞除外，更換不重算保固。維修運費待確認。",
+          "returns": "30天試睡退貨須整潔乾燥、無重大污損破損異味；買家付區域報價退貨運費，缺外袋另收整新費，贈品須歸還或補價。拆封尺寸買錯的換新另由店家估費。",
+          "sourceIds": [
+            "l-mrs-s-b14f1674f55a",
+            "l-mrs-s-8ac01cf98b9e",
+            "l-mrs-s-20ed77700534",
+            "l-mrs-s-ede0acfbdc62"
+          ]
+        }
+      ],
+      "reviewSearch": {
+        "status": "checked",
+        "queries": [
+          "\"眠床先生\" \"安卡拉\" 評價 心得"
+        ],
+        "checkedAt": "2026-09-06",
+        "note": "已逐型號具名查找公開心得及負評；結果主要為官方介紹或同名混淆，未找到可核實型號使用心得／負評，並非零負評。"
+      }
+    },
+    {
+      "id": "l-mrs-mauveni",
+      "brandId": "l-mrsleeping",
+      "model": "莫芙妮床墊",
+      "size": {
+        "label": "標準五尺雙人",
+        "system": "台規",
+        "width": 152,
+        "length": 188,
+        "height": null
+      },
+      "material": "咖啡紗表布／科技乳膠層／3D Air Mesh透氣網布；首頁稱科技乳膠不含蛋白，未當成天然乳膠含量證據",
+      "firmness": {
+        "label": "未公開整床明確軟硬級；表布／舒適層柔軟宣傳不代替整床分級",
+        "rank": null
+      },
+      "notes": [
+        "商品額外資訊明列五尺152×188；厚度未取得可靠文字／圖片規格，保留待確認。",
+        "直連首頁、商店、FAQ及sitemap均回403；本次讀取搜尋服務可公開展開的官方完整內文，無法再核實結帳庫存。",
+        "官網宣傳的抑菌、過敏或療癒效果沒有當成獨立使用評價。"
+      ],
+      "sourceIds": [
+        "l-mrs-s-00fb8b701758",
+        "l-mrs-s-8ac01cf98b9e"
+      ],
+      "offers": [
+        {
+          "id": "l-mrs-mauveni-web",
+          "name": "眠床先生官方網店",
+          "channel": "online",
+          "address": "桃園市桃園區春日路1137號（桃園館總店；非台中門市）",
+          "district": null,
+          "url": "https://www.mrsleeping.com.tw/product/【高纖咖啡紗】莫芙妮床墊（標準五尺雙人）/",
+          "price": 19800,
+          "priceNote": "首頁明列本款標準五尺双人價格；商品页額外資訊為152×188。直連官網403，以公開可讀頁面快照核實；未用尺寸混合起價，庫存／結帳價待確認。",
+          "delivery": "unknown",
+          "deliveryNote": "FAQ只有物流流程範例與地區依店報價，沒有核實太平或全本島配送。",
+          "shippingNote": "運費依門市及地區報價；FAQ範例另列個人因素再配送300–600元，實際適用待確認。",
+          "stairsNote": "樓層、電梯及偏遠地址影響門市報價，沒有固定樓層費。",
+          "trial": "unknown",
+          "trialNote": "官方列桃園、新北共6家體驗門市；未找到台中展示，本款各店現有展示需確認。",
+          "haul": "unknown",
+          "haulFee": null,
+          "haulNote": "未公開舊床载走條件；FAQ派司機回收是購入瑕疵品退換，不是舊床清運。",
+          "downstairs": "unknown",
+          "downstairsNote": "未公開是否協助舊床搬下樓與費用。",
+          "sleepTrial": "官網原買家收貨日起30天內可申請；建議適應5–7天，特價展示／客製及非原買家不適用。",
+          "warranty": "有限保固：表布1年、主要獨立筒結構10年；保留憑證。製造缺陷可申請，永久泡棉凹陷以超過3.8cm為例；正常輕微壓痕、錯誤床架／折疊、污損霉味及人為損壞除外，更換不重算保固。維修運費待確認。",
+          "returns": "30天試睡退貨須整潔乾燥、無重大污損破損異味；買家付區域報價退貨運費，缺外袋另收整新費，贈品須歸還或補價。拆封尺寸買錯的換新另由店家估費。",
+          "sourceIds": [
+            "l-mrs-s-00fb8b701758",
+            "l-mrs-s-8ac01cf98b9e",
+            "l-mrs-s-20ed77700534",
+            "l-mrs-s-ede0acfbdc62"
+          ]
+        }
+      ],
+      "reviewSearch": {
+        "status": "checked",
+        "queries": [
+          "\"眠床先生\" \"莫芙妮\" 評價 心得"
+        ],
+        "checkedAt": "2026-09-06",
+        "note": "已逐型號具名查找公開心得及負評；結果主要為官方介紹或同名混淆，未找到可核實型號使用心得／負評，並非零負評。"
       }
     },
     {
@@ -349344,6 +349905,25 @@
       ]
     },
     {
+      "id": "g-darphia-old-review",
+      "brandId": "g-darphia",
+      "productIds": [],
+      "offerIds": [],
+      "scope": "brand",
+      "kind": "mixed",
+      "summary": "2021開箱作者自述舊雙人獨立筒重約20公斤，自行搬運需中途休息；當時配送只送一樓。作者對躺感正面，但文中有募資促銷資訊、合作關係未明，不作獨立推薦。規格為150×186cm、1000顆，與現行188cm／594顆不同，只列歷史品牌參考，不當現行款缺陷。",
+      "topics": [
+        "搬運重量",
+        "舊款／合作狀態待確認"
+      ],
+      "publishedAt": "2021-12-03",
+      "evidence": "single",
+      "resolution": "沒有可核實的現行版本長期追蹤；當時疫情物流限制不能當現行配送承諾。",
+      "sourceIds": [
+        "g-darphia-old-review"
+      ]
+    },
+    {
       "id": "fd-r-body-edge",
       "brandId": "fd-body",
       "productIds": [
@@ -359612,6 +360192,111 @@
       "checkedAt": "2026-09-06"
     },
     {
+      "id": "g-darphia-cat-0",
+      "title": "朵法亞 官方床墊分類",
+      "url": "https://www.darphia.com/categories/mattress-collection",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-cat-1",
+      "title": "朵法亞 官方床墊分類",
+      "url": "https://www.darphia.com/categories/memory-foam-mattress-collection",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-cat-2",
+      "title": "朵法亞 官方床墊分類",
+      "url": "https://www.darphia.com/categories/pocket-spring-mattress-collection",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-cat-3",
+      "title": "朵法亞 官方床墊分類",
+      "url": "https://www.darphia.com/categories/standard-double-mattress",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-main",
+      "title": "朵法亞公司與非實體店聯絡地址",
+      "url": "https://www.darphia.com/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-faq",
+      "title": "朵法亞官方Q&A：運送、試睡、回收與保固",
+      "url": "https://www.darphia.com/pages/darphia-question",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-faq-data",
+      "title": "官方Q&A頁公開載入的問答資料",
+      "url": "https://docs.google.com/spreadsheets/d/1LnwU_xLdggtsZfRRvB8eikooJnpF4neQEiWhsTXwAoM/gviz/tq?gid=85233081",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-returns",
+      "title": "朵法亞退換貨政策",
+      "url": "https://www.darphia.com/about/policy",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-spring",
+      "title": "KUMO 獨立筒 指定雙人價格及規格",
+      "url": "https://www.darphia.com/products/kumo-double-size-spring-bed",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-eslite-spring",
+      "title": "誠品 KUMO雙人150 規格與通路讀取限制",
+      "url": "https://www.eslite.com/product/1005468132682288235008",
+      "kind": "retailer",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-memory",
+      "title": "KUMO 記憶棉 指定雙人價格及規格",
+      "url": "https://www.darphia.com/products/kumo-double-size-memory-bed",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-eslite-memory",
+      "title": "誠品 KUMO雙人150 規格與通路讀取限制",
+      "url": "https://www.eslite.com/product/1005468132682288238009",
+      "kind": "retailer",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-old-review",
+      "title": "2021 KUMO舊版150×186cm 開箱與搬運限制",
+      "url": "https://lazykristy.com/2021/12/kumo/",
+      "kind": "secondary",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-momo",
+      "title": "momo 9613186 商品命名與規格版本衝突",
+      "url": "https://www.momoshop.com.tw/product/9613186",
+      "kind": "retailer",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "g-darphia-classic",
+      "title": "經典款目前只列105×186cm單人",
+      "url": "https://www.darphia.com/products/classic-pocket-spring-mattress",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
       "id": "fd-body-cat",
       "title": "BODY 巴緹｜PChome 品牌床墊目錄",
       "url": "https://24h.pchome.com.tw/store/DEBRCL",
@@ -362724,6 +363409,104 @@
       "title": "【BN-Home】全新升級souffle舒芙蕾涼感貓抓布5尺雙人三折床墊(防潑水/貓抓布/床墊套/布套)｜尺寸價格及服務",
       "url": "https://www.momoshop.com.tw/product/10540921",
       "kind": "retailer",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-8ac01cf98b9e",
+      "title": "眠床先生首頁：四款標準五尺價格",
+      "url": "https://www.mrsleeping.com.tw/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-4707ae092ebb",
+      "title": "眠床先生熱門商品完整分類：四款床墊及一款枕頭",
+      "url": "https://www.mrsleeping.com.tw/product-category/熱門商品/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-20ed77700534",
+      "title": "眠床先生常見問題：試睡、物流範例與有限保固",
+      "url": "https://www.mrsleeping.com.tw/qa/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-ede0acfbdc62",
+      "title": "眠床先生官方門市與經營主體",
+      "url": "https://www.mrsleeping.com.tw/contact/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-bfceace347d4",
+      "title": "眠床先生關於我們：全益家具實業社",
+      "url": "https://www.mrsleeping.com.tw/about/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-f8d2d0a8ee5e",
+      "title": "眠床先生庫倫迪床墊：五尺152×188額外資訊",
+      "url": "https://www.mrsleeping.com.tw/product/【舒柔包覆】庫倫迪床墊（標準五尺雙人）/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-a748dc3e2d06",
+      "title": "眠床先生菲莉帕床墊：五尺152×188額外資訊",
+      "url": "https://www.mrsleeping.com.tw/product/【蘆薈精華】菲莉帕床墊（標準五尺雙人）/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-b14f1674f55a",
+      "title": "眠床先生安卡拉床墊：五尺152×188額外資訊",
+      "url": "https://www.mrsleeping.com.tw/product/【山寧泰材質】安卡拉床墊（標準五尺雙人）/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-00fb8b701758",
+      "title": "眠床先生莫芙妮床墊：五尺152×188額外資訊",
+      "url": "https://www.mrsleeping.com.tw/product/【高纖咖啡紗】莫芙妮床墊（標準五尺雙人）/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-7f825276bbc7",
+      "title": "招眠貓 BECKONING SLEEP資格查核",
+      "url": "https://beckoningsleep.com/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-3f7cb4d98899",
+      "title": "彈霸 TANHA資格查核",
+      "url": "https://www.tanha.com.tw/",
+      "kind": "official",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-8a85688528bf",
+      "title": "Miofeel資格查核",
+      "url": "https://zh.wikipedia.org/wiki/金典綠園道",
+      "kind": "independent",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-0de82037a49a",
+      "title": "生活工場資格查核",
+      "url": "https://www.nccc.com.tw/春漾美麗生活節-中彰投.pdf",
+      "kind": "independent",
+      "checkedAt": "2026-09-06"
+    },
+    {
+      "id": "l-mrs-s-ae2e5d21d36a",
+      "title": "Power Sleep知識睡眠館資格查核",
+      "url": "https://www.powersleep.com.tw/",
+      "kind": "official",
       "checkedAt": "2026-09-06"
     },
     {
@@ -394502,6 +395285,28 @@
       "notes": "完整遍歷產品主分類2頁12+10款、HERE分類7款、訂製分類2頁12+3款，另核首頁21+1款，去重22現行商品全部讀取；138圖片與24懶載圖補抓均OCR，其中包含重複主圖，細節圖確認5尺188×150，無單人/Queen/King/加大混價。兩款文字未列5尺價時以主圖具名雙人價格核實。QA三張圖只有軟硬挑選；門市導航按鈕沒有href，未取得Google逐則評論；並非以無評論宣稱零負評。官網未有現行太平配送、回收及售後細則，全部候選；保固15年/10年模板差異與高度不明公開標示。22款逐名查詢完成，讀2023栗子醬、MISO與2025傻蛋夫妻原文；後者明確受邀，其他合作狀態未確認。受邀文中妻子覺得稍軟是代理龍馬無可取代的彭政閔，不套自有HERE負評；歷史Cold極凍床、迪歐斯與代理龍馬聯名款不在目前22款分類，僅記歷史目錄差異，沒有當現售SKU。官網物理治療師與名人推薦屬官方宣傳，不當獨立推薦。"
     },
     {
+      "brandId": "g-darphia",
+      "status": "complete",
+      "catalogUrls": [
+        "https://www.darphia.com/categories/mattress-collection",
+        "https://www.darphia.com/categories/memory-foam-mattress-collection",
+        "https://www.darphia.com/categories/pocket-spring-mattress-collection",
+        "https://www.darphia.com/categories/standard-double-mattress"
+      ],
+      "productPagesChecked": 6,
+      "reviewQueries": [
+        "\"朵法亞\" \"KUMO\" \"缺點\"",
+        "\"朵法亞\" \"KUMO\" \"獨立筒\" 評價 PTT Dcard",
+        "\"朵法亞\" \"記憶棉\" \"退貨\"",
+        "\"朵法亞\" \"床墊\" \"台中\" 試躺",
+        "\"朵法亞\" \"KUMO\" site:ptt.cc",
+        "\"朵法亞\" \"KUMO\" site:dcard.tw",
+        "\"朵法亞\" \"KUMO\" \"負評\"",
+        "\"朵法亞\" \"記憶棉\" \"心得\" \"缺點\""
+      ],
+      "notes": "四個現行床墊分類入口全讀、無額外分頁；主分類9項，兩款Double，其餘單人、床套／保潔墊排除。經典款105×186×8cm，不收Double；舊搜尋索引涼感藍珠未在現行分類列出。KUMO獨立筒具無床架單用文字；記憶款售完與用途疑慮候選。誠品兩個同尺寸頁可讀索引但即時頁403，價格配送未知。momo9613186當前標題寫單人5×6.2尺，舊索引有150×186、公分／命名與官網188版衝突，不把折價價格套到官網SKU。FAQ公開載入的問答已完整讀取：床墊不試睡、無實店、不回收、不搬上樓；保固年限未公開。逐型號心得主要舊款與促銷，無可核實現版長期負評。"
+    },
+    {
       "brandId": "fd-body",
       "status": "complete",
       "catalogUrls": [
@@ -395333,6 +396138,79 @@
         "BN-Home 全新升級souffle舒芙蕾涼感貓抓布5尺雙人三折床墊 評價 負評"
       ],
       "notes": "品牌搜尋105項4頁全部讀取；另已發現但本次搜尋排序未露的舒芙蕾Double也讀取。7款標準Double完整頁，單人、嬰兒及沙發床排除，4乳膠款由尺寸圖補齊150×186公分，但圖示未明示主床用途仍保留候選，且圖3年保固與欄位30天或1年衝突。逐SKU具名查詢；讀PTT2021/2022文章為購前提問沒有使用結果，不當評價。眾多2014–2018複製導購無可核實身份/版本；momo未取得可核實的具日期文字負評，不生成星等。"
+    },
+    {
+      "brandId": "l-mrsleeping",
+      "status": "partial",
+      "catalogUrls": [
+        "https://www.mrsleeping.com.tw/",
+        "https://www.mrsleeping.com.tw/shop/",
+        "https://www.mrsleeping.com.tw/product-category/熱門商品/"
+      ],
+      "productPagesChecked": 4,
+      "reviewQueries": [
+        "\"眠床先生\" \"庫倫迪\" 評價 心得",
+        "\"眠床先生\" \"菲莉帕\" 評價 心得",
+        "\"眠床先生\" \"安卡拉\" 評價 心得",
+        "\"眠床先生\" \"莫芙妮\" 評價 心得",
+        "\"眠床先生\" 庫倫迪 心得 負評",
+        "\"眠床先生\" 菲莉帕 心得 評價",
+        "\"眠床先生\" 莫芙妮 安卡拉 評價 缺點",
+        "\"眠床先生\" 配送 台中 太平 舊床",
+        "\"眠床先生\" \"台中\" 門市",
+        "\"眠床先生\" \"全台\" 運費"
+      ],
+      "notes": "公開首頁、導航與熱門分類一致為4款床墊+1款抱抱熊貓枕；四商品完整可讀内文皆核對五尺尺寸。枕頭、單人及6/7尺排除。商店／sitemap直連403，無法核實是否另有未被公開頁索引的款式與圖片厚度，故不宣稱無限制完成整站；太平配送未核實。未找到獨立型號／品牌售後負評，MR.LIVING、眠床小姐資料不挪用。"
+    },
+    {
+      "brandId": "l-mrs-beckoning",
+      "status": "partial",
+      "catalogUrls": [
+        "https://beckoningsleep.com/"
+      ],
+      "productPagesChecked": 0,
+      "reviewQueries": [],
+      "notes": "官網有橘貓等床墊；公開配送及維修服務以新店／中和／永和／文山及新北為範圍，其他地區另評估，未核實太平配送或台中門市；候選，不以北部舊床回收承諾套到台中。"
+    },
+    {
+      "brandId": "l-mrs-tanha",
+      "status": "excluded",
+      "catalogUrls": [
+        "https://www.tanha.com.tw/"
+      ],
+      "productPagesChecked": 1,
+      "reviewQueries": [],
+      "notes": "已讀官網與手機完整商品頁：唯一公開款為單人加大107×190×5.5cm，16900含本島運費；未有Double，不因本島配送就收錄。"
+    },
+    {
+      "brandId": "l-mrs-miofeel",
+      "status": "partial",
+      "catalogUrls": [
+        "https://zh.wikipedia.org/wiki/金典綠園道"
+      ],
+      "productPagesChecked": 0,
+      "reviewQueries": [],
+      "notes": "本輪只在歷史商場租戶名單出現，未取得現行完整Double型錄；不把寢具櫃位當作床墊供貨，不算新增符合品牌。"
+    },
+    {
+      "brandId": "l-mrs-workinghouse",
+      "status": "partial",
+      "catalogUrls": [
+        "https://www.nccc.com.tw/春漾美麗生活節-中彰投.pdf"
+      ],
+      "productPagesChecked": 0,
+      "reviewQueries": [],
+      "notes": "商戶活動清單未識別現行完整Double型號；候選名稱，不從歷史商場旁支遞迴擴大。"
+    },
+    {
+      "brandId": "l-mrs-powersleep",
+      "status": "partial",
+      "catalogUrls": [
+        "https://www.powersleep.com.tw/"
+      ],
+      "productPagesChecked": 0,
+      "reviewQueries": [],
+      "notes": "具名查詢意外返回現行官網量身訂製床墊與枕頭介紹；尚無本次可核實固定Double型號及太平配送，不當成符合新增。"
     },
     {
       "brandId": "fm-mu",
@@ -400693,6 +401571,24 @@
   ],
   "research": {
     "checkedAt": "2026-09-06",
-    "note": "品牌型錄與公開資料持續整理中；每家進度與資料缺口列於下方。"
+    "complete": false,
+    "consecutiveZeroRounds": 0,
+    "note": "本次以台中實體店與百貨、可配送太平的官方網店及主要電商為範圍，查閱可存取的現行床墊分類、分頁、尺寸選項及條款，目前仍在補漏，尚未達到最後連續兩輪零新增。各輪搜尋與發現如實列於下方。品牌清冊包含已收錄、候選與有理由排除的名稱，不代表所有品牌均有符合配送的商品。「型錄已核對」指下方列明入口完成，並非保證涵蓋全球全部歷史型號；來源受限、未知價格、型號展示及服務仍逐項標待確認。本頁為公開資料查核快照，不聯絡店家、不持續自動更新。",
+    "rounds": [
+      "前期跨組補漏一：發現 Dreampal 等新入口，已納入後續品牌型錄查核，非零新增。 搜尋：台中 床墊 品牌 門市 標準雙人 2026；太平 大里 北屯 床墊 工廠 官方；台灣 雙人 床墊 官網 網購 品牌；雙人床墊 家具連鎖 百貨 台中",
+      "前期跨組補漏二：發現 AIWAKE、MU 與 Yahoo 通路精確款項，已逐頁補入，不記為零。 搜尋：台中 床墊 專賣店 品牌 官方 台灣製；台中 百貨 床墊 專櫃 品牌 雙人；網購 床墊 標準雙人 完整床墊 品牌；台中 太平 床墊 回收 門市",
+      "前期跨組補漏三：發現 cani、o’rest、Auping，已完成公開目錄／資格與候選記錄，不記為零。 搜尋：台中 床墊 品牌 專賣店 官網；台中 百貨 床墊 專櫃 品牌；台灣 網購 標準雙人 床墊 官方品牌；歐規 日規 Double 床墊 台灣 門市",
+      "地方補漏 1：非零。希匹 cphometw.com 與已收森可 cphome.com.tw 為不同主體，後續全部13款已在 research-gap-local.json；造床者／囍時達屬根組既發現入口，另逐一完成。 搜尋：台中 床墊 工廠 專賣店 品牌 標準雙人 -site:facebook.com -site:instagram.com；台中 太平 大里 豐原 沙鹿 床墊 本土品牌 門市；台中 百貨 床墊 品牌 專櫃 清單；台中 床墊 三大 獨立筒 工廠 品牌",
+      "地方補漏 2：非零。發現新床墊品牌且官方列台中4經銷商；完成兩分類37頁，22商品候選。一般5尺缺公分，電動整床未確認可拆售，太平配送未明。未將候選算已符合。下一輪由根組统一，不在本組自行持續擴張。 搜尋：台中 床墊 品牌 專賣店 官方 標準雙人；台中 百貨 床墊 寢具 專櫃 品牌 清單；台中 家具 通路 床墊 品牌 門市 一覽",
+      "最終跨組第 1 輪：新增符合／需盤點品牌 2 個。名稱：IMAGER-37 易眠床、iloom 怡倫。皆有現行Double型錄及台中實店；IMAGER37太平配送未公開，產品列候選但品牌須完整盤點。iloom交國際組。 搜尋：台中 床墊 工廠 直營 門市 標準雙人 品牌；台中 百貨 家具樓層 床墊 品牌 櫃位；床墊 官方網站 雙人 台灣本島 配送 品牌；台灣 歐規 日規 Double 床墊 140 190 200 品牌。已收錄名稱：愛傢、o'rest、TENDAYS、眠床床墊工房、愛菲爾、金格、佶豐、床墊國王、MUJI、IKEA、宜得利、橘家、Sealy、Simmons、TEMPUR。尚未取得新符合證據：八八八家具、日新床業、富谷Fukurou、滿室愛有限公司（歷史名稱）、迪奧斯、GLORY／繪見幾米（歷史名稱）",
+      "最終跨組第 2 輪：新增符合／需盤點品牌 2 個。名稱：Nicomilano 尼可米蘭諾、Arnold Palmer 阿諾帕瑪。新麗現行官方床墊25頁全讀、全站464項兩頁補漏。尼可19款、阿諾1款皆精確Double；新麗有台中實店但未公開太平配送，產品列候選。另Eclipse新增通路與白月光不是新品牌。 搜尋：台中 太平 北屯 南屯 家具 床墊 品牌 標準雙人 專賣；台中 大遠百 中友 新光三越 床墊 寢具 品牌 櫃位；官方 網購 標準雙人 床墊 全台配送 品牌；台灣 日本 歐洲 床墊 Double 140195 150200 官網。已收錄名稱：TENDAYS、瑞成舒雅特、TEMPUR、Reverie、AIWAKE、床墊國王、Sealy、IKEA、airweave、IWATA、H&D、橘家、Eclipse、Lady Americana、Midas。尚未取得新符合證據：家居工廠、Dolcenotte 朵拉斯蒂、Perfectcloud 美夢雲、豪好睡台灣製造薄款、GOLD BOND 金榜（歷史通路）、布拉琪（歷史通路）。排除：EZONE 怡眾：官網為家電；歷史三洋Wales僅寢具，不算完整床墊",
+      "最終跨組第 3 輪：新增符合／需盤點品牌 3 個。名稱：Doogood 度咕、GLORY 葛洛麗、KIDULT 繪見幾米。度咕4款、GLORY與KIDULT上品寢具共16款已完成現行Double資格／官網型錄，歷史候選名稱升級為確認品牌；本輪實際非零。 搜尋：台中 床墊 專賣店 在地品牌 工廠直營 5尺；台中 百貨 樓層導覽 品牌 床墊 枕頭 7樓 11樓；台灣 官方 床墊 網路商店 標準雙人 免運；台灣 歐規 日規 Double 床墊 140x200 140x195 品牌。已收錄名稱：金格、佶豐、瑞成舒雅特、TENDAYS、愛傢、o'rest、眠豆腐、穗寶康、TEMPUR、丹普Dann、眠床床墊工房、宜得利、H&D、好市多、橘家、PURRR呼呼睡。尚未取得新符合證據：Steiner 法國絲丹、PIIN 品東西、A.C LIVING、鬆鶴",
+      "最終跨組第 4 輪：新增符合／需盤點品牌 3 個。名稱：PERQUISS 寶麒麗泰、AJ2 愛家概念、睡眠吐司 Sleep Toast。PERQUISS官方Q-Lite152×188×24且配送條款列全台中部班次；AJ2現行格陵蘭奶油152×188×29與台中店已確認，舊活動頁規格不可代用；睡眠吐司現行招牌152×188×26、全省配送及台中店入口可讀。三者research-*.json全品牌及目前catalog皆無同義名稱，非零新增，完整型錄待分派完成。 PERQUISS現行完整分類已封存5款，3個合併床拼接套組排除；AJ2與睡眠吐司由其他組收尾。 搜尋：台中 床墊 專賣店 北屯 南屯 太平 品牌 官網；台中 大遠百 新光三越 中友 百貨 床墊 品牌 樓層；床墊 品牌 官方 標準雙人 152 188 全台配送；台灣 日本 歐洲 Double 床墊 140 195 150 200 官方。已收錄名稱：airweave 愛維福、Awake Living 覺醒家居、Sonmil 森好眠、瑞成／舒雅特、綠的、Sealy 席伊麗、穗寶康、IMAGER-37 易眠床、橘家、IKEA、MUJI",
+      "最終跨組第 5 輪：新增符合／需盤點品牌 2 個。名稱：玖窩居家、床在這裡 Bedhere。玖窩現行精確Double及全省配送；床在這裡完整22款有雙人尺寸圖與台中門市，已完成官方型錄，但太平配送未公開而各通路列候選。兩個新品牌均已清冊及公開，不能將床在這裡原待核實名稱漏計。 搜尋：台中 床墊 工廠 專賣店 北區 西屯 太平 品牌；台中 百貨 床墊 品牌 一覽 遠東 中友 新光三越；標準雙人 床墊 官方網店 台灣 配送 152 188；日本 歐洲 double 床墊 台灣 官方 140 200 150 195。已收錄名稱：瑞成／舒雅特、TENDAYS、愛傢舒眠館、晚安奈特、Fulux弗洛克、穗寶康、Awake Living、PERQUISS、綠的名床、IKEA、宜得利、橘家",
+      "最終跨組第 6 輪：新增符合／需盤點品牌 0 個。四查詢已與全research品牌及已知同義名稱對照，未找到新符合品牌；Miofeel與生活工場僅歷史商場／商戶名單，無完整Double型錄證據，列候選不計符合。 搜尋：台中 標準雙人 床墊 實體 門市 品牌；台中 百貨 專櫃 名床 品牌 床墊；床墊 官方 線上購物 雙人 本島 宅配；台灣 歐規 日規 Double 床墊 官方 購買。已收錄名稱：TENDAYS、KingKoil、愛傢、佶豐、德泰、悅夢、仙度瑞拉、Sealy、TEMPUR、床墊國王、Lunio、Emma、IKEA、MUJI、宜得利、橘家、PURRR呼呼睡、好傢在、H&D。尚未取得新符合證據：Miofeel、生活工場",
+      "最終跨組第 7 輪：新增符合／需盤點品牌 1 個。名稱：Darphia 朵法亞。Darphia KUMO獨立筒150×188×9.5cm／11999，官方明文不需床架可單用且本島配送，root已完成全9項床墊分類中2款Double。眠床先生四款152×188有公開對應價但直連403、北部門市且太平配送未核實，4款保留候選；招眠貓只確認北部服務，未算符合；本輪新增1符合品牌，連續零重算。 搜尋：台中 床墊 名床 展示門市 官方 型錄 雙人；台中 大遠百 新光三越 SOGO 中友 寢具床墊 品牌；床墊品牌 官網 標準雙人 台灣本島 送貨；日本 德國 荷蘭 雙人床墊 台灣 140 150 200。已收錄名稱：KingKoil、Lunio、Sealy、TENDAYS、Awake Living、IKEA、MUJI、宜得利、橘家、H&D。尚未取得新符合證據：眠床先生 Mr.Sleeping、招眠貓。排除：彈霸 TANHA：僅107×190單人加大",
+      "已發現名稱另行資格補查：聖黛爾、Annabelle、Olthea、Stylemaster、Kinloch 金安德森。原work/l-local-gap-rounds.json候選金安德森具名核查找到完整現行官方系列；非零資格升級，由root全型錄處理。",
+      "已發現名稱另行資格補查：UrBed 優倍得。逐名查核聖黛爾品牌心得命中家樂家居官網；aboutus統編39716799明列聖黛爾企業有限公司社頭營業所，自有UrBed有現行Double選項與台中配送。新增1符合品牌，盤點完成後才開始最終兩輪。 root已核完整45唯一商品入口並封存，13款UrBed完整主床收錄。"
+    ]
   }
 }

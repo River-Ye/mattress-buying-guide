@@ -38,4 +38,14 @@
 
 ## GitHub Pages
 
-公開部署與公開站驗證完成後補入本節。
+已發布：https://river-ye.github.io/mattress-buying-guide/
+
+- Repository：River-Ye/mattress-buying-guide，public；main 分支根目錄，HTTPS 已啟用。
+- 首次部署 c8f63736bdae4426bb6d456e8c2f8eb99b3bea0a，2026-09-06 23:16（台灣）Pages 狀態 built。
+- HTML、CSS、JavaScript、JSON、favicon、README 及本檔 HTTP 200，SHA-256 與本地逐檔一致。
+- 公開站 Chrome 1440×900：幸福床店價格12100至83300雙向排序，切換品牌保留比較；比較表可見負評原文及服務來源；Escape 恢復焦點。
+- MUJI 公開站：網店15990／17990／21990元，切换實店且提供載走後全為需詢價，回收1000元，未沿用網價。
+- 公開站 Chrome 390×844：篩選可收合，最多四項，加入第五項有提示；逐項移除、清空、空結果及重置正常。比較表可獨立橫向捲動，頁面寬390px，底部比較列貼齊844px視窗。
+- 公開站主控台沒有警告或錯誤，外連安全屬性皆正確。
+
+查核補漏的新增資料會在同一 main 分支續更；研究是否完成以網站品牌盤點說明為準。
