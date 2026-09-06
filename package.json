@@ -1,0 +1,1 @@
+{"name":"mattress-buying-guide","private":true,"type":"module","scripts":{"test":"node --test","test:coverage":"node --test --experimental-test-coverage --test-coverage-include=logic.mjs","check":"node --check app.mjs && node --check logic.mjs && node --test"}}
