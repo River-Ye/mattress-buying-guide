@@ -22,10 +22,11 @@
     <section class="catalog-section" id="catalog" aria-labelledby="catalog-title">
       <div class="section-heading"><div><p class="eyebrow">FIND YOUR MATTRESS</p><h2 id="catalog-title">找到值得去躺的那幾張</h2></div><p id="checked-date" class="small"></p></div>
       <div class="catalog-layout">
-        <aside><details id="filter-panel" open><summary>篩選床墊 <span aria-hidden="true">＋</span></summary><form id="filters" aria-label="床墊篩選">
-          <label>關鍵字<input type="search" name="q" placeholder="品牌、型號、門市" autocomplete="off"></label>
-          <label>查核狀態<select name="status"><option value="eligible">已確認尺寸與配送</option><option value="candidate">候選・尺寸／配送待確認</option><option value="all">全部已收錄床款</option></select></label>
-          <label>品牌<select name="brand"><option value="">全部品牌</option></select></label>
+        <div class="filters-area"><details id="filter-panel" open><summary>搜尋與篩選床墊 <span aria-hidden="true">＋</span></summary><form id="filters" aria-label="床墊篩選">
+          <p class="filter-help">品牌、尺寸等選項可輸入關鍵字。請從建議清單選取，清空可重設條件。</p>
+          <label class="keyword-filter">關鍵字<input type="search" name="q" placeholder="搜尋品牌、型號、門市" autocomplete="off"></label>
+          <label class="brand-filter">品牌<select name="brand"><option value="">全部品牌</option></select></label>
+          <label class="status-filter">查核狀態<select name="status"><option value="eligible">已確認尺寸與配送</option><option value="candidate">候選・尺寸／配送待確認</option><option value="all">全部已收錄床款</option></select></label>
           <fieldset><legend>床墊本體價格（NT$）</legend><div class="price-inputs"><input aria-label="最低價格" name="minPrice" type="number" min="0" step="100" placeholder="最低"><span>–</span><input aria-label="最高價格" name="maxPrice" type="number" min="0" step="100" placeholder="不限"></div><label class="check-label"><input type="checkbox" name="priceStatus" value="unknown">只看需詢價款</label></fieldset>
           <label>尺寸規格<select name="system"><option value="">全部規格</option><option>台規</option><option>歐規</option><option>日規</option><option value="其他">其他・規格待確認</option></select></label>
           <label>實際寬 × 長（cm）<select name="size"><option value="">全部尺寸</option></select></label>
@@ -36,7 +37,7 @@
           <label>該款台中試躺<select name="trial"><option value="">全部狀態</option><option value="yes">已確認可試躺</option><option value="unknown">展示待確認</option><option value="no">無台中試躺</option></select></label>
           <label>直接載走舊床<select name="haul"><option value="">全部狀態</option><option value="yes">提供載走服務</option><option value="no">不提供載走</option><option value="unknown">載走待確認</option></select></label>
           <button class="text-button" type="reset">清除所有篩選</button>
-        </form></details><p class="filter-foot">軟硬度依官方文字整理，跨品牌尺度不同，仍以親自試躺為準。</p></aside>
+        </form></details><p class="filter-foot">軟硬度依官方文字整理，跨品牌尺度不同，仍以親自試躺為準。</p></div>
         <div class="results-area"><div class="results-toolbar"><p id="result-count" role="status" aria-live="polite"></p><label class="sort-label">排序<select id="sort"><option value="name">品牌／型號</option><option value="price-asc">價格由低到高</option><option value="price-desc">價格由高到低</option><option value="firmness-asc">躺感由軟到硬</option><option value="firmness-desc">躺感由硬到軟</option><option value="updated">最近查核</option></select></label></div><p id="results-note" class="small"></p><div id="products" class="product-grid"></div><button id="load-more" class="secondary" hidden>載入更多床墊</button></div>
       </div>
     </section>
