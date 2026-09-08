@@ -8,10 +8,10 @@ test('complete catalog keeps unique products, required evidence and explicit unk
  assert.deepEqual(validateCatalog(data),[]);
  const keys=new Set(),brands=new Set(data.brands.map(b=>b.id));
  for(const p of data.products){
-  const key=[p.brandId,p.model.replace(/\s/g,''),p.size.width,p.size.length,p.size.height].join('|');
+  const key=[p.brandId,p.model.replace(/\s/g,''),p.size.width,p.size.length,p.size.height,!p.size.width||!p.size.length?p.size.category||'double':''].join('|');
   assert.ok(!keys.has(key),`duplicate model and size: ${p.id}`);keys.add(key);
-  assert.ok(['checked','limited'].includes(p.reviewSearch?.status),`review search incomplete: ${p.id}`);
-  assert.ok(p.reviewSearch.queries.length,`missing review queries: ${p.id}`);
+  assert.ok((p.baseProductId?['checked','limited','pending']:['checked','limited']).includes(p.reviewSearch?.status),`review search incomplete: ${p.id}`);
+  if(p.reviewSearch.status==='pending')assert.ok(p.baseProductId&&p.reviewSearch.note);else assert.ok(p.reviewSearch.queries.length,`missing review queries: ${p.id}`);
   assert.ok(p.offers.length,`missing seller: ${p.id}`);
   if(!p.size.width||!p.size.length)assert.ok(!selectProducts({...data,products:[p]}).length);
   for(const o of p.offers){
@@ -72,12 +72,36 @@ test('downstairs-only policies never match haul-away filters',()=>{
  }
  assert.equal(selectProducts(data,{brand:'r-ikea',haul:'yes',status:'all'}).length,0);
  for(const p of data.products.filter(p=>p.brandId==='r-muji')){
-  assert.equal(p.offers.find(o=>o.channel==='online').haul,'no');assert.equal(p.offers.find(o=>o.channel==='store').haul,'yes');
+  for(const o of p.offers)assert.equal(o.haul,o.channel==='online'?'no':'yes');
  }
- for(const p of data.products){for(const o of p.offers){const r=scopedReviews(data.reviews,p,o);assert.ok(r.model.every(r=>r.productIds.includes(p.id)));assert.ok(r.store.every(r=>r.offerIds.includes(o.id)));}}
+ for(const p of data.products){for(const o of p.offers){const r=scopedReviews(data.reviews,p,o);assert.ok(r.model.every(r=>r.productIds.includes(p.id)));assert.ok(r.store.every(r=>r.offerIds.includes(o.id)||r.offerIds.includes(o.baseOfferId)));}}
 });
 
 test("firmness uses consistent broad text groups without invented numeric precision",()=>{
  const labels=new Map();
  for(const p of data.products){const {label,rank}=p.firmness;assert.ok([null,2,3,4].includes(rank),p.id);if(labels.has(label))assert.equal(rank,labels.get(label),label);labels.set(label,rank);if(/未標示軟硬|軟硬度待確認/.test(label))assert.equal(rank,null,p.id);}
+});
+
+test('Queen extension covers every original model while keeping exact prices, candidates and source scopes',()=>{
+ const originals=data.products.filter(p=>!p.baseProductId),queens=data.products.filter(p=>p.size.category==='queen');
+ const byId=new Map(data.products.map(p=>[p.id,p])),sources=new Set(data.sources.map(s=>s.id));
+ assert.equal(data.queenAudit.length,originals.length);
+ assert.equal(new Set(data.queenAudit.map(a=>a.baseProductId)).size,originals.length);
+ for(const a of data.queenAudit){
+  assert.ok(byId.has(a.baseProductId));assert.ok(['confirmed','unavailable','unverified'].includes(a.status));assert.ok(a.note&&a.checkedAt);
+  assert.ok(a.sourceIds.length&&a.sourceIds.every(id=>sources.has(id)));
+  for(const id of a.productIds)assert.equal(byId.get(id)?.baseProductId,a.baseProductId);
+ }
+ for(const q of queens){
+  const base=byId.get(q.baseProductId);assert.equal(q.brandId,base.brandId);
+  assert.doesNotMatch(q.size.label,/\bKing\b|特大|單人|(?:3(?:\.5)?|5)\s*[尺呎]?\s*[x×*＊]\s*6\s*[尺呎]/i);
+  if(!/Queen/i.test(q.size.label))assert.doesNotMatch(q.size.label,/(?:6|六)\s*[尺呎]?\s*[x×*＊]\s*(?:7|七)/i);
+  if(!q.size.width||!q.size.length||q.offers.every(o=>o.stockStatus==='out_of_stock'))assert.equal(q.scopeStatus,'candidate');
+  for(const o of q.offers)if(o.baseOfferId){const original=base.offers.find(x=>x.id===o.baseOfferId);assert.ok(original);assert.equal(o.name,original.name);assert.equal(o.channel,original.channel);}
+ }
+ const orange=byId.get('q-rec-l-og-23');assert.deepEqual([orange.size.width,orange.size.length,orange.offers[0].price],[182,188,32100]);
+ assert.equal(byId.get('l-og-23').offers[0].price,26800);
+ const muji=byId.get('q-rec-r-muji-9757527');assert.equal(muji.scopeStatus,'candidate');assert.equal(selectProducts({...data,products:[muji]}).length,0);
+ const ikea=byId.get('q-rec-r-ikea-60613087');assert.deepEqual([ikea.size.width,ikea.size.length,ikea.offers[0].price],[180,200,11990]);assert.equal(ikea.offers[0].haul,'no');
+ assert.equal(data.queenAudit.find(a=>a.baseProductId==='r-ikea-70531736').status,'unavailable');
 });

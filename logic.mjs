@@ -8,8 +8,8 @@ export function dimensions(size) {
 }
 export function latestDate(data,product) {
   const ids=new Set([...product.sourceIds,...product.offers.flatMap(o=>o.sourceIds||[])]);
-  const offers=new Set(product.offers.map(o=>o.id));
-  for(const review of data.reviews||[])if(review.brandId===product.brandId&&(review.scope==='brand'||review.scope==='model'&&review.productIds?.includes(product.id)||review.scope==='store'&&review.offerIds?.some(id=>offers.has(id))))for(const id of review.sourceIds||[])ids.add(id);
+  const offers=new Set(product.offers.flatMap(o=>[o.id,o.baseOfferId].filter(Boolean)));
+  for(const review of data.reviews||[])if(review.brandId===product.brandId&&(review.scope==='brand'||review.scope==='model'&&(review.productIds?.includes(product.id)||product.baseProductId&&review.productIds?.includes(product.baseProductId))||review.scope==='store'&&review.offerIds?.some(id=>offers.has(id))))for(const id of review.sourceIds||[])ids.add(id);
   return [...data.sources.filter(s=>ids.has(s.id)).map(s=>s.checkedAt),product.reviewSearch?.checkedAt||''].sort().at(-1)||'';
 }
 export function selectProducts(data,filters={}) {
@@ -17,10 +17,11 @@ export function selectProducts(data,filters={}) {
   const rows=[];
   for(const product of data.products) {
     const brand=brands.get(product.brandId);
-    const fitsScope=product.scopeStatus!=='candidate'&&product.size.system!=='其他'&&!!(product.size.width&&product.size.length);
+    const fitsScope=product.scopeStatus!=='candidate'&&(product.size.system!=='其他'||product.size.category==='queen')&&!!(product.size.width&&product.size.length);
     const status=filters.status||'eligible';
     if(filters.brand&&filters.brand!==product.brandId) continue;
     if(filters.system&&filters.system!==product.size.system) continue;
+    if(filters.sizeCategory&&filters.sizeCategory!==(product.size.category||'double')) continue;
     if(filters.size&&filters.size!==`${product.size.width}×${product.size.length}`) continue;
     if(filters.material&&!product.material.replaceAll('泡綿','泡棉').replaceAll('袋裝彈簧','獨立筒').replaceAll('連結型','連結式').includes(filters.material)) continue;
     if(filters.firmness&&(filters.firmness==='unknown'?product.firmness.rank!==null:String(product.firmness.rank)!==filters.firmness)) continue;
@@ -36,7 +37,7 @@ export function selectProducts(data,filters={}) {
       if(filters.priceStatus==='unknown'&&o.price!==null)return false;
       if(filters.minPrice!==undefined&&filters.minPrice!==''&&(o.price===null||o.price<Number(filters.minPrice)))return false;
       if(filters.maxPrice!==undefined&&filters.maxPrice!==''&&(o.price===null||o.price>Number(filters.maxPrice)))return false;
-      const haystack=`${brand?.name} ${brand?.entity} ${product.model} ${o.name} ${o.address||''}`.toLocaleLowerCase();
+      const haystack=`${brand?.name} ${brand?.entity} ${product.model} ${product.size.label} ${product.size.category==='queen'?'Queen 雙人加大':'Double 標準雙人'} ${o.name} ${o.address||''}`.toLocaleLowerCase();
       return (filters.q||'').trim().toLocaleLowerCase().split(/\s+/).every(word=>haystack.includes(word));
     });
     if(!offers.length)continue;
@@ -60,7 +61,7 @@ export function addComparison(items,productId,offerId) {
 }
 export function scopedReviews(reviews,product,offer) {
   const relevant=reviews.filter(r=>r.brandId===product.brandId);
-  return {model:relevant.filter(r=>r.scope==='model'&&r.productIds?.includes(product.id)),brand:relevant.filter(r=>r.scope==='brand'),store:relevant.filter(r=>r.scope==='store'&&r.offerIds?.includes(offer.id))};
+  return {model:relevant.filter(r=>r.scope==='model'&&r.productIds?.includes(product.id)),otherSize:relevant.filter(r=>r.scope==='model'&&product.baseProductId&&r.productIds?.includes(product.baseProductId)&&!r.productIds?.includes(product.id)),brand:relevant.filter(r=>r.scope==='brand'),store:relevant.filter(r=>r.scope==='store'&&(r.offerIds?.includes(offer.id)||offer.baseOfferId&&r.offerIds?.includes(offer.baseOfferId)))};
 }
 export function validateCatalog(data) {
   const errors=[],sourceIds=new Set(data.sources.map(s=>s.id)),brandIds=new Set(data.brands.map(b=>b.id)),productIds=new Set(data.products.map(p=>p.id)),offerIds=new Set();
@@ -72,8 +73,9 @@ export function validateCatalog(data) {
   for(const p of data.products){
     checkSources(p);
     if(!brandIds.has(p.brandId))errors.push(`${p.id} invalid brand`);
-    if(!['台規','歐規','日規','其他'].includes(p.size.system))errors.push(`${p.id} invalid size system`);
+    if(!['台規','歐規','日規','美規','其他'].includes(p.size.system))errors.push(`${p.id} invalid size system`);
     for(const dimension of ['width','length','height'])if(p.size[dimension]!==null&&(!Number.isFinite(p.size[dimension])||p.size[dimension]<=0))errors.push(`${p.id} invalid dimension ${dimension}`);
+    if(p.size.category!==undefined&&!['double','queen'].includes(p.size.category))errors.push(`${p.id} invalid size category`);
     if(p.firmness.rank!==null&&![2,3,4].includes(p.firmness.rank))errors.push(`${p.id} invalid firmness`);
     for(const o of p.offers){
       checkSources(o);

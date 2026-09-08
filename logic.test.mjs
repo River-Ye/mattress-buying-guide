@@ -59,7 +59,7 @@ test('links reject executable schemes, credentials and malformed URLs',()=>{
 });
 test('brand and store complaints never become model complaints',()=>{
  const reviews=[{scope:'brand',brandId:'b'},{scope:'model',brandId:'b',productIds:['cheap']},{scope:'model',brandId:'b',productIds:['soft']},{scope:'store',brandId:'b',offerIds:['a']}];
- assert.deepEqual(scopedReviews(reviews,data.products[0],data.products[0].offers[1]),{model:[reviews[1]],brand:[reviews[0]],store:[reviews[3]]});
+ assert.deepEqual(scopedReviews(reviews,data.products[0],data.products[0].offers[1]),{model:[reviews[1]],otherSize:[],brand:[reviews[0]],store:[reviews[3]]});
 });
 test('recent verification includes relevant review evidence and review-search dates',()=>{
  const x=structuredClone(data);x.sources.push({id:'review-source',checkedAt:'2026-09-08'},{id:'other-source',checkedAt:'2026-09-10'});
@@ -76,4 +76,26 @@ test('data validation fails duplicate IDs, wrong price types, missing source and
  x.products[0].offers[0].price='100';assert.ok(validateCatalog(x).some(x=>x.includes('price')));
  x.products[0].offers[0].sourceIds=['missing'];assert.ok(validateCatalog(x).some(x=>x.includes('source')));
  x.products[0].offers[0].haul='no';x.products[0].offers[0].haulFee=500;assert.ok(validateCatalog(x).some(x=>x.includes('haul')));
+});
+
+test('Double and Queen filters preserve exact-size prices and comparison identities',()=>{
+ const x=structuredClone(data);
+ x.products.push(product('queen',[offer('queen-offer',55000)],{model:'cheap',size:{category:'queen',system:'美規',label:'Queen',width:152.4,length:203.2,height:25}}));
+ x.products.push(product('queen-quote',[offer('queen-quote-offer',null)],{size:{category:'queen',system:'其他',label:'Queen',width:160,length:200,height:25}}));
+ assert.deepEqual(selectProducts(x,{sizeCategory:'queen',sort:'price-asc'}).map(r=>r.product.id),['queen','queen-quote']);
+ assert.equal(selectProducts(x,{sizeCategory:'queen',maxPrice:50000}).length,0);
+ assert.equal(selectProducts(x,{sizeCategory:'double'}).some(r=>r.product.id==='queen'),false);
+ assert.equal(selectProducts(x,{q:'Queen',size:'152.4×203.2'})[0].price,55000);
+ assert.equal(selectProducts(x,{q:'Double',sizeCategory:'double'})[0].product.id,'cheap');
+ const selected=[];assert.equal(addComparison(selected,'cheap','a').status,'added');assert.equal(addComparison(selected,'queen','queen-offer').status,'added');assert.equal(selected.length,2);
+});
+
+
+test('Queen keeps same-model Double complaints explicitly separated from Queen evidence',()=>{
+ const q=product('queen',[offer('q-offer',25000,{baseOfferId:'a'})],{baseProductId:'cheap',size:{category:'queen',system:'台規',label:'Queen',width:182,length:188,height:25}});
+ const reviews=[{id:'same-store',brandId:'b',scope:'store',offerIds:['a']},{id:'different-store',brandId:'b',scope:'store',offerIds:['unrelated']},{id:'base-review',brandId:'b',scope:'model',productIds:['cheap']},{id:'queen-review',brandId:'b',scope:'model',productIds:['queen']},{id:'other-brand',brandId:'other',scope:'model',productIds:['cheap']}];
+ const result=scopedReviews(reviews,q,q.offers[0]);
+ assert.deepEqual(result.model.map(r=>r.id),['queen-review']);
+ assert.deepEqual(result.otherSize.map(r=>r.id),['base-review']);
+ assert.deepEqual(result.store.map(r=>r.id),['same-store']);
 });
