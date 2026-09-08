@@ -6,6 +6,16 @@
 - 原始碼：[River-Ye/mattress-buying-guide](https://github.com/River-Ye/mattress-buying-guide)
 - 查核快照：2026-09-06；各項來源日期與研究進度在網站「品牌盤點」及 catalog.json。
 
+## 推薦榜單
+
+編選及15款指定尺寸價格覆核：2026-09-08；其他資料依各項來源日期。
+
+[開啟15款推薦榜單](https://river-ye.github.io/mattress-buying-guide/#recommendations)。依預算與規格取捨、台中試躺及舊床處理便利性安排編選順序，每款都有適合對象、推薦原因與負評／限制。排名是選購建議，沒有自行換算星等、銷量或實測品質分數。
+
+榜單的「加入比較」會帶入指定型號、尺寸與通路，可和一般清單共用2–4項比較。展開每款可看官方推薦依據、完整通路條件與分範圍心得。
+
+`recommendations.mjs` 只保留選款、理由和本次覆核資訊；商品與通路資料仍取自 `catalog.json`。更新榜單需核對同尺寸價格、每款理由與來源，並執行 `npm run check`，防止重複尺寸灌入榜單或引用未確認配送的通路。
+
 ## 網站怎麼使用
 
 1. 開啟 [床墊選購網站](https://river-ye.github.io/mattress-buying-guide/)，按「開始選床」。搜尋與篩選集中在商品列表上方；手機可點「搜尋與篩選床墊」展開條件。
